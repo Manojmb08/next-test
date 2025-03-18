@@ -1,3 +1,4 @@
-export default function Product({ params }: { params: { id: string } }) {
-    return <h1>Product {params.id}</h1>;
+export default async function Product({ params }: { params: { id: string } }) {
+    const { id } = await params
+    return <h1>Product {id}</h1>;
 }
